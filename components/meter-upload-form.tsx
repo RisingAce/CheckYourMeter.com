@@ -942,6 +942,12 @@ export default function MeterUploadForm() {
         )}
       </form>
 
+      {/* Disclaimer */}
+      <div className="mt-6 p-4 bg-gray-50 border border-gray-200 rounded-lg text-xs text-gray-600">
+        <p className="font-semibold mb-1">Disclaimer:</p>
+        <p>The developer of this tool does not guarantee the accuracy, completeness, or reliability of any results produced. All outputs are provided for informational purposes only and should not be relied upon as professional advice. The developer accepts no liability for any loss, damage, or inconvenience caused by reliance on this tool, including any errors or omissions.</p>
+      </div>
+
       {/* Better Image Needed Warning (high priority) */}
       {imageQualityWarning && !result && (
         <BetterImageNeeded 
