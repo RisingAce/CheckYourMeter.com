@@ -5,6 +5,7 @@ import "./globals.css";
 import React from 'react';
 import { ThemeProvider } from "@/components/theme-provider";
 import AdSense from "@/components/AdSense"; // Import AdSense component
+import { Footer } from "@/components/ui/footer"; // Import Footer component
 
 // Configure the Inter font
 const inter = Inter({ subsets: ["latin"] });
@@ -134,7 +135,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#2563eb" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="twitter:image" content="https://www.checkyourmeter.co.uk/og-image.png" />
       </head>
       <body className={inter.className}>
@@ -147,6 +148,7 @@ export default function RootLayout({
           {/* AdSense component to load the script client-side */}
           <AdSense />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
